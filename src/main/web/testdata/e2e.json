@@ -1,0 +1,24 @@
+{
+    "TC1":{
+        "login": {
+            "username": "akhiljda@gmail.com",
+            "password": "Password"
+        },
+        "home": {
+            "productName": "Nike court vision low"
+        },
+        "product": {
+            "size": "X",
+            "color": "White",
+            "quantity": "3"
+        },
+        "checkout": {
+            "fullName": ""
+        }
+
+    },
+    "TC2": {
+
+    }
+}
+
