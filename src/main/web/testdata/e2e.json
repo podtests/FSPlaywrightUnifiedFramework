@@ -5,15 +5,23 @@
             "password": "Password"
         },
         "home": {
-            "productName": "Nike court vision low"
+            "productName": "Nike zoom fly"
         },
         "product": {
-            "size": "X",
-            "color": "White",
+            "size": "S",
+            "color": "Blue",
             "quantity": "3"
         },
-        "checkout": {
-            "fullName": ""
+         "checkout": {
+            "fullName":"Akhil Jain",
+            "telephone": "20089765",
+            "address": "Delhi",
+            "city": "Gzb",
+            "country": "United States",
+            "province": "Alabama",
+            "postcode": "110099",
+            "shippingMethod":"standard",
+            "paymentMethod": "cash"
         }
 
     },

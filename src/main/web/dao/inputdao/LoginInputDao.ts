@@ -1,3 +1,5 @@
+import LoginDataLayer from "../../datacontrolledlayer/loginDataLayer";
+
 export default class LoginInputDao {
 
     private username: string;

@@ -1,5 +1,6 @@
 import { Locator, Page } from "@playwright/test";
 import ProductInputDao from "../dao/inputdao/ProductInputDao";
+import CartPom from "./cartPom";
 
 export default class ProductPom {
 
@@ -33,16 +34,22 @@ export default class ProductPom {
         await this.fillQty(productInputDao.getQuantity());
         await this.clickAddToCart();
         await this.clickViewCart();
+        return new CartPom(this.page);
     }
 
 
     public async selectSize(size: string) {
-        this.createSizeTypeLocator(size).click();
+        await this.page.waitForLoadState("load");
+        let sizeLocator = this.createSizeTypeLocator(size);
+        await sizeLocator.click();
+        await sizeLocator.locator("//parent::li[@class='selected']").waitFor({state: 'visible'});
         return this;
     }
 
     public async selectColor(color: string) {
-        this.createColorTypeLocator(color).click();
+        let colorLocator = this.createColorTypeLocator(color);
+        await colorLocator.click();
+        await colorLocator.locator("//parent::li[@class='selected']").waitFor({state: 'visible'});
         return this;
     }
 

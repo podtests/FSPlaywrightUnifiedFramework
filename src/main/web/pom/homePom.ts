@@ -23,6 +23,7 @@ export default class HomePom {
     }
 
     public async clickProductLink(homeInputDao: HomeInputDao) {
+        await this.page.waitForLoadState("load");
         await this.createProductLocator(homeInputDao.getProductName()).click();
         return new ProductPom(this.page);        
     }

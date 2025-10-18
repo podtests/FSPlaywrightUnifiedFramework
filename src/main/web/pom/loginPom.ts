@@ -22,6 +22,7 @@ export default class LoginPom {
     }
 
     public async fillUserName(userName: string) {
+        await this.page.waitForLoadState("load");
         await this.userNameTB.fill(userName);
         return this;        
     }

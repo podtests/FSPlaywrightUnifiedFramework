@@ -1,3 +1,5 @@
+import ProductDataLayer from "../../datacontrolledlayer/productDataLayer";
+
 export default class ProductInputDao {
     private size: string;
     private color: string;

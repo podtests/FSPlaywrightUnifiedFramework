@@ -1,3 +1,5 @@
+import HomeDataLayer from "../../datacontrolledlayer/homeDataLayer";
+
 export default class HomeInputDao{
     private productName: string;
 
