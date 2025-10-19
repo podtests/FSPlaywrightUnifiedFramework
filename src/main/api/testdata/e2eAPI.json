@@ -1,0 +1,26 @@
+{
+     "TC1": {
+        "login": {
+            "username": "akhiljda@gmail.com", 
+            "password": "Password"
+        },
+        "home": {
+            "productName": "Nike court vision low"
+        },
+        "product": {            
+            "quantity": "1"
+        },
+        "checkout": {
+            "fullName":"Akhil Jain",
+            "telephone": "20089765",
+            "address": "Delhi",
+            "city": "Gzb",
+            "countryName": "United States",
+            "provinceName": "Alabama",
+            "postcode": "110099",
+            "shippingMethod":"Standard Delivery",
+            "paymentMethod": "Cash On Delivery"
+        }
+        
+    }
+}
